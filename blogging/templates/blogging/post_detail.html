@@ -1,0 +1,10 @@
+{% extends 'blogging/base.html' %}
+{% block content %}
+<div class="p-3 mb-2 bg-success text-white">
+    <h2>{{ post }}</h2>
+    <blockquote class="blockquote-reverse">
+        <p>{{ post.text }}</p>
+        <footer> - by {{ post.author }} {{ post.date_created }}</footer>
+    </blockquote>
+</div>
+{% endblock %}
